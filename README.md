@@ -13,7 +13,7 @@ cat('myfile.txt', console.log);             // reads the file as utf-8 and retur
 cat('file://myfile.txt', console.log);      // same as above
 ```
 
-and your `http` / `https` urls:
+and your `http` / `https` urls
 
 ```js
 cat('http://google.com', console.log);      // cat also follows any redirects

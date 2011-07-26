@@ -36,8 +36,8 @@ var http = catter(require('http'));
 var https = catter(require('https'));
 
 module.exports = function(location, callback) {
-	var protocol = (location.match(/(\w+):\/\//) || [])[1] || 'file';
-		
+	var protocol = (location.match(/^(\w+):\/\//) || [])[1] || 'file';
+
 	if (protocol === 'file') {
 		fs.readFile(location.replace(/^(file:\/\/localhost|file:\/\/)/, ''), 'utf-8', callback);
 		return;
@@ -48,6 +48,7 @@ module.exports = function(location, callback) {
 	}
 	if (protocol === 'https') {
 		https(location, callback);
+		return;
 	}
 	throw new Error('protocol '+protocol+' currently not supported :(');
 };

@@ -1,6 +1,6 @@
 # cat
 
-cat takes an scheme based url and reads it's endpoint. it's available through npm
+cat will read the contents of an url. it's available through npm
 
 	npm install cat
 	

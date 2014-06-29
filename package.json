@@ -11,5 +11,8 @@
   "author": {
     "name": "Mathias Buus Madsen",
     "email": "mathiasbuus@gmail.com"
+  },
+  "bin": {
+    "cat": "bin.js"
   }
 }

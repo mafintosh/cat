@@ -6,6 +6,10 @@
     "util",
     "request"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/cat.git"
+  },
   "version": "0.2.0",
   "homepage": "https://github.com/mafintosh/cat",
   "author": {
